@@ -1,0 +1,43 @@
+---
+title: "report.qmd"
+editor: visual
+---
+
+```{r}
+
+load(here::here("data", "clean", "clean.RData"))
+library(tidyverse)
+
+
+```
+
+```{r}
+
+total_earthquakes <- nrow(clean)
+
+```
+
+The total number of earthquakes in the last 30 days was `r total_earthquakes`
+
+```{r}
+
+daily_summary <- clean |>
+  group_by(date = as.Date(time)) |>
+  summarise(
+    count = n()
+  )
+
+print(daily_summary)
+
+
+```
+```{r}
+
+ggplot(daily_summary, aes(x = date, y = count)) +
+  geom_bar(stat = "identity", fill = "steelblue") +
+  geom_text(aes(label = count), vjust = -0.5) +
+  labs(title = "Earthquake Count by Day", x = "Date", y = "Count") +
+  theme_minimal()
+
+```
+
