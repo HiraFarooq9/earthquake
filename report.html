@@ -193,7 +193,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>total_earthquakes <span class="ot">&lt;-</span> <span class="fu">nrow</span>(clean)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>The total number of earthquakes in the last 30 days was 662</p>
+<p>The total number of earthquakes in the last 30 days was 651</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>daily_summary <span class="ot">&lt;-</span> clean <span class="sc">|&gt;</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(<span class="at">date =</span> <span class="fu">as.Date</span>(time)) <span class="sc">|&gt;</span></span>
@@ -206,16 +206,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code># A tibble: 31 × 2
    date       count
    &lt;date&gt;     &lt;int&gt;
- 1 2026-07-13    13
- 2 2026-07-14    23
- 3 2026-07-15    20
- 4 2026-07-16    28
- 5 2026-07-17    64
- 6 2026-07-18    30
- 7 2026-07-19    20
- 8 2026-07-20    28
- 9 2026-07-21    29
-10 2026-07-22    20
+ 1 2026-07-14     7
+ 2 2026-07-15    20
+ 3 2026-07-16    30
+ 4 2026-07-17    64
+ 5 2026-07-18    30
+ 6 2026-07-19    20
+ 7 2026-07-20    28
+ 8 2026-07-21    30
+ 9 2026-07-22    20
+10 2026-07-23    24
 # ℹ 21 more rows</code></pre>
 </div>
 </div>
