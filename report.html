@@ -81,7 +81,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f35a81a4717690815b2013502477d714.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-cb61c712ca1a7fe70a83faed8e4da2d7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -194,7 +194,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>total_earthquakes <span class="ot">&lt;-</span> <span class="fu">nrow</span>(clean)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>The total number of earthquakes in the last 30 days was 664</p>
+<p>The total number of earthquakes in the last 30 days was 658</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>daily_summary <span class="ot">&lt;-</span> clean <span class="sc">|&gt;</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(<span class="at">date =</span> <span class="fu">as.Date</span>(time)) <span class="sc">|&gt;</span></span>
@@ -207,16 +207,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code># A tibble: 31 × 2
    date       count
    &lt;date&gt;     &lt;int&gt;
- 1 2026-10-20     3
- 2 2026-10-21    27
- 3 2026-10-22    35
- 4 2026-10-23    22
- 5 2026-10-24    85
- 6 2026-10-25    43
- 7 2026-10-26    32
- 8 2026-10-27    25
- 9 2026-10-28    38
-10 2026-10-29    24
+ 1 2026-10-21     5
+ 2 2026-10-22    35
+ 3 2026-10-23    22
+ 4 2026-10-24    86
+ 5 2026-10-25    43
+ 6 2026-10-26    32
+ 7 2026-10-27    28
+ 8 2026-10-28    38
+ 9 2026-10-29    25
+10 2026-10-30    16
 # ℹ 21 more rows</code></pre>
 </div>
 </div>
